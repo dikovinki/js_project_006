@@ -2,6 +2,9 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #00CC00;
     background: #141518;
+    padding-top: 1em;
+    display: flex;
+  justify-content: center;
 }
 h1.main_title {
     text-align: center;
@@ -9,3 +12,24 @@ h1.main_title {
 h2.subtitle {
     text-align: center;
 }
+.typewriter p {
+    text-align: center;
+    overflow: hidden;
+    border-right: .5em solid #00CC00;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    margin: 0 auto;
+        animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00CC00; }
+  }
